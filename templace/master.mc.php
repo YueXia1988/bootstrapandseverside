@@ -49,6 +49,7 @@
 
 
             <?php
+            include "templace/about.inc.php";
               content();
             ?>
 

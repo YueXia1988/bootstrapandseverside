@@ -1,4 +1,5 @@
 <?php
+$title = " About";
 include "templace/master.mc.php";
 function content(){
 ?>

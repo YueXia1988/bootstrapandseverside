@@ -1,9 +1,6 @@
 <?php
-  
+  	
 
 
-  if(! isset($_GET['page'])){
-  		include "templace/home.inc.php";
-  }else{
-  		include "templace/about.inc.php";
-  }
+	error_reporting(E_ALL);
+   require "routes.php";

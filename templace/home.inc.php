@@ -1,9 +1,4 @@
-<?php
-$title = " Home";
-include "templace/master.mc.php";
-function content(){
-  global $moviesuggest;
-?>
+
 
               <div class="row">
                 <div class="col-xs-12">
@@ -80,7 +75,4 @@ function content(){
                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
               </div>
-  <?php            
-   }     
-
-       
+         

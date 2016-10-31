@@ -1,8 +1,4 @@
-<?php
-$title = " About";
-include "templace/master.mc.php";
-function content(){
-?>
+
 
               <div class="row">
                 <div class="col-xs-12">
@@ -25,5 +21,3 @@ function content(){
                     <img src="https://placekitten.com/700/400" alt="Kitten Image" class="img-responsive" alt="Responsive image">
                 </div>
               </div> 
-  <?php
-}

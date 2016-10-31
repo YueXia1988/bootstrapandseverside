@@ -50,7 +50,7 @@
 
             <?php
             
-              content();
+              $this->content();
             ?>
 
 

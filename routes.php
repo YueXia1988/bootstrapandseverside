@@ -36,11 +36,18 @@
 
 				];
 			}
-			include "templace/home.inc.php";
+			require "classes/HomeView.php";
+			$view = new HomeView(compact('moviesuggest'));			
+			$view->render();
 			break;
 		
 		case 'about':
-			include "templace/about.inc.php";
+
+
+			require "classes/AboutView.php";
+			$view = new AboutView();
+			$view->render();
+
 			break;
 
 		case 'moviesuggest':
@@ -92,22 +99,16 @@
 				$_SESSION['moviesuggest'] = $moviesuggest;
 				header("location:./");
 			}
+			require "classes/SuggestEmailView.php";
+			$view = new suggestEmailView(compact('moviesuggest'));
+			$view->render();
 
-
-			// instantiate the SDK with your API credentials and define your domain. 
-				$mg = new Mailgun("key-9e81cce556da1284caa6c15f06616163");
-				$domain = "sandboxa3fafe8931f348a983e023e9683a45a7.mailgun.org";
-
-				# Now, compose and send your message.
-				$mg->sendMessage($domain, array(
-					'from'    => 'schlocktoberfest<mailgun@'.$domain .'>', 
-				     'to'      => "<". $moviesuggest['email'].">", 
-					'subject' => 'Thanks for suggesting the movie '.$moviesuggest['title'], 
-					 'text'    => 'Thanks for suggesting the movie '.$moviesuggest['title'].'. It would turn up in website soon!')); 
 				header("location:./?page=moviesuggestsuccess");
 
 			case 'moviesuggestsuccess':
-			include "templace/moviesuggestsuccess.inc.php";
+			require "classes/MoviesuggestView.php";
+			$view = new MoviesuggestView();
+			$view->render();
 		
 			break;
 

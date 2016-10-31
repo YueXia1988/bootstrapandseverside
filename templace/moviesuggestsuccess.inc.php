@@ -1,9 +1,5 @@
 
-<?php
-$title = " Movie Suggest";
-include "templace/master.mc.php";
-function content(){
-?>
+
 
               <div class="row">
                 <div class="col-xs-12">
@@ -14,5 +10,3 @@ function content(){
                 </div>
               </div>
               
-  <?php
-}

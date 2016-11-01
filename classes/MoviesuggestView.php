@@ -2,7 +2,7 @@
 
 
 
-Class MoviesuggestView{
+Class MoviesuggestView extends View{
 
 
 

@@ -2,16 +2,11 @@
 
 
 
-Class HomeView{
 
-
-	public $data;
+Class HomeView extends View{
 
 
 
-	public function __construct($data){
-		$this->data =$data;
-	}
 	
 	public  function render(){
 		$page="home";
@@ -22,7 +17,7 @@ Class HomeView{
 
 	public  function content(){
 		extract($this->data);
-		var_dump($moviesuggest);
+		
 		include "templace/home.inc.php";
 	}
 

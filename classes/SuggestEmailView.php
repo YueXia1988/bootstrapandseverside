@@ -4,17 +4,11 @@ use Mailgun\Mailgun;
 
 
 
-class suggestEmailView {
+
+Class suggestEmailView extends View{
 
 
-	public $data;
-
-	public function __construct($data){
-		$this->data =$data;
-	}
 	
-	
-
 
 	public  function render(){
 		extract($this->data);

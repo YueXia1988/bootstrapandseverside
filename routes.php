@@ -36,7 +36,7 @@
 
 				];
 			}
-			require "classes/HomeView.php";
+			
 			$view = new HomeView(compact('moviesuggest'));			
 			$view->render();
 			break;
@@ -44,7 +44,7 @@
 		case 'about':
 
 
-			require "classes/AboutView.php";
+			
 			$view = new AboutView();
 			$view->render();
 
@@ -99,14 +99,14 @@
 				$_SESSION['moviesuggest'] = $moviesuggest;
 				header("location:./");
 			}
-			require "classes/SuggestEmailView.php";
+			
 			$view = new suggestEmailView(compact('moviesuggest'));
 			$view->render();
 
 				header("location:./?page=moviesuggestsuccess");
 
 			case 'moviesuggestsuccess':
-			require "classes/MoviesuggestView.php";
+			
 			$view = new MoviesuggestView();
 			$view->render();
 		

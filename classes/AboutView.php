@@ -2,7 +2,7 @@
 
 
 
-Class AboutView{
+Class AboutView extends View{
 
 
 

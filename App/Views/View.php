@@ -1,5 +1,8 @@
 <?php
 
+
+namespace App\Views;
+
 abstract Class View{
 
 

@@ -1,7 +1,7 @@
 <?php
 
 
-
+namespace App\Views;
 
 Class HomeView extends View{
 

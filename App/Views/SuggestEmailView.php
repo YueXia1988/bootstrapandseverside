@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Views;
 use Mailgun\Mailgun;
 
 

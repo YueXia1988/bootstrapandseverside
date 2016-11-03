@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Views;
 
 
 Class AboutView extends View{

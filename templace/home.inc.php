@@ -2,7 +2,7 @@
 
               <div class="row">
                 <div class="col-xs-12">
-                  <h1>Schlockoberfest<small>The Best Worst Festival Ever !</small></h1>
+                  <h1>Schlockoberfest<small> The Best Worst Festival Ever !</small></h1>
                 </div>
               </div>
               <div class="row">

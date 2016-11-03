@@ -1,6 +1,6 @@
 <?php
 
-
+namespace App\Views;
 
 Class MoviesuggestView extends View{
 
